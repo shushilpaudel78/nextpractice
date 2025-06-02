@@ -1,7 +1,10 @@
+'use client'
 import React from 'react'
+import { usePathname } from 'next/navigation'
 
-export  default function page(){
+export  default function page({}){
+    const pathname = usePathname();
   return (
-    <div> Blog page</div>
+    <div> This is our Page {pathname} </div>
   )
 }
